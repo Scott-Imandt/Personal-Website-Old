@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Scott Imandt</title>
+  <title>Home - Scott Imandt</title>
 
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -21,19 +21,46 @@
 <body>
   <section id="title">
     <div class="container-fluid">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">Scott Imandt</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
       <div class="row">
         <div class="col-lg-6">
           <h1 class="title-h1">Scott Imandt</h1>
           <h2 class="title-h2">Computer Science Major</h2>
           <div class="row" style="margin-bottom: ;">
-            <div class="col-4">
+            <div class="col-4 icons">
+              <a class="btn"href="https://github.com/Scott-Imandt">
               <img class="title-icons" src="Pictures/index pics/githubicon.svg" alt="GitHub Icon Link">
+            </a>
             </div>
-            <div class="col-4">
-              <img class="title-icons" src="Pictures/index pics/linkedinicon.svg" alt="Linkedin Icon Link">
+            <div class="col-4 icons">
+              <a class="btn"href="#">
+                <img class="title-icons" src="Pictures/index pics/linkedinicon.svg" alt="Linkedin Icon Link">
+              </a>
             </div>
-            <div class="col-4">
-              <img class="title-icons" src="Pictures/index pics/mailicon.svg" alt="Mail Icon Link">
+            <div class="col-4 icons">
+              <a class="btn"href="mailto: ScottImandt@gmail.com">
+                <img class="title-icons" src="Pictures/index pics/mailicon.svg" alt="Mail Icon Link">
+              </a>
             </div>
           </div>
         </div>
@@ -45,33 +72,33 @@
   <section id = "about">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
+        <div class="col-lg-4 col-ms-12">
+          <div class="card" style="">
             <img src="Pictures/index pics/Projects.png" class="card-img-top" alt="Project Card Picture">
             <div class="card-body">
               <h5 class="card-title">Project's</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go To Projects</a>
+              <a href="project.html" class="btn btn-primary">Go To Projects</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
+        <div class="col-lg-4 col-ms-12">
+          <div class="card" style="">
             <img src="Pictures/index pics/Projects.png" class="card-img-top" alt="Project Card Picture">
             <div class="card-body">
               <h5 class="card-title">About Me</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go To About Me</a>
+              <a href="aboutme.html" class="btn btn-primary">Go To About Me</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
+        <div class="col-lg-4 col-ms-12">
+          <div class="card" style="">
             <img src="Pictures/index pics/Projects.png" class="card-img-top" alt="Project Card Picture">
             <div class="card-body">
               <h5 class="card-title">Skills</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go To Skills</a>
+              <a href="aboutme.html" class="btn btn-primary">Go To Skills</a>
             </div>
           </div>
 
