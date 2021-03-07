@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Projects - Scott Imandt</title>
+  <title>Smart Blinds - Scott Imandt</title>
 
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -89,45 +89,59 @@
     <div class="container-fluid">
       <div class="row">
 
-        <!-- Project 1  Smart Blinds-->
+        <!-- Jump To  Smart Blinds-->
         <div class="col-lg-4 col-ms-12">
           <div class="card" style="">
             <h1 class="card-title">Jump To</h1>
               <div class="card-body">
                 <ul>
                   <li>
-                    <a href="#">Video</a>
+                    <a href="#">Overview</a>
                   </li>
                   <li>
-                    <a href="#">Summary</a>
+                    <a href="#">Objective</a>
                   </li>
                   <li>
-                    <a href="#">Arduino</a>
+                    <a href="#">Components</a>
+                  </li>
+                  <li>
+                    <a href="#">Arduino Controller/HC-05</a>
+                  </li>
+                  <li>
+                    <a href="#">Arduino IDE / Java App Develoment</a>
+                  </li>
+                  <li>
+                    <a href="#">Easy EDA PCB Design</a>
                   </li>
                 </ul>
               </div>
           </div>
         </div>
 
-        <!-- Project 2  Trail Application-->
+        <!-- Overview-->
         <div class="col-lg-8 col-ms-12">
           <div class="card" style="">
                 <h1 class="card-title">Overview</h1>
                 <div class="card-body">
-                  <p class="card-text">A Java Application that allows a user to record trail history</p>
+                  <p class="card-text">The smart blinds project was a concept that I created on my own. This was a great project to learn and develop my skills as a
+                  Software Engineer and was a great opertunity to learn about eletronic components and how they operate. The smart blinds basic function is to open an close automaticly
+                based on the time of day that it is. If for example it is a sunny day out the blinds will open, rather if it is night time, the blinds will close.If the user wishes
+              to overide smart function they can manually control the blinds on a smartphone app.</p>
                 </div>
           </div>
         </div>
 
-        <!-- Project 3  HPS Daily-->
+        <!-- Objective -->
         <div class="col-lg-12 col-ms-12">
           <div class="card" style="">
             <div class="row">
               <div class="col-6">
-                <h1 class="card-title">Arduino</h1>
+                <h1 class="card-title">Objective</h1>
                 <div class="card-body">
-                  <p class="card-text">A website that allowied students to keep up tyo date on school activities</p>
-                  <p class="card-text">Utilized: HTML, CSS, JavaScript, Google Calendar API, Google FireBase Database</p>
+                  <p class="card-text">The goal for the smart blinds project is to create a project that both utilizes hardware and software development. The purpose of
+                  this is to learn and develop my own skills as a software and hardware developer. The Smart Blinds project was perfect for this becasue it is a very simple idea (open and close blinds)
+                that can be expanded. There are two major conflicts that have to be solved for this project. First To develop a hardware solution to physically move the blinds accuretly accoring to
+              enviromental conditions or user desired degree. The Second Conflict is to give the user a reliable way to control the blinds using simple software control.</p>
                 </div>
               </div>
               <div class="col-6">
@@ -136,6 +150,86 @@
             </div>
           </div>
         </div>
+
+        <!-- Components Used -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style="">
+            <div class="row">
+              <div class="col-6">
+                <h1 class="card-title">Components</h1>
+                <div class="card-body">
+                  <p class="card-text">
+                    <ul>
+                      <li>2x Servo Motor (20kg)</li>
+                      <li>Arduino Nano</li>
+                      <li>HC-05 Bluetooth Module</li>
+                      <li>Photo Resistor</li>
+                      <li>Buck Converter</li>
+                      <li>12v AC DC Power Supply</li>
+                      <li>220 ohm Ressistor</li>
+                      <li>2x 100uf Capacitor</li>
+                      <li>Custom PCB / Home made solderd breadboard</li>
+                      <li>22 AWG wire</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="Pictures\project-smartblinds pics\smart blinds components.jpg" class="card-img-top" alt="Smart Blinds Component pic">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arduino / HC-05  -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style="">
+            <div class="row">
+              <div class="col-6">
+                <h1 class="card-title">Arduino / HC-05</h1>
+                <div class="card-body">
+                  <h2>Arduino</h2>
+                  <p class="card-text">To control Blinds the best option was to use the Arduino Micro Controller. The Arduino Micro Crontroller
+                  is great at controlling electronic componets by using it's digital pin outs and its anolog pinouts.The arduino takes the analog signal from the photo resistor and converts
+                  it into a degree value for the servo motors. As more light hits the photo resistor the more degrees the servo motor will turn capping it at 90 degrees which is fully open.
+                  Once the degree value it converted the arduino uses its PWN digital pins to tell the servo to move to a specific degree. Reading the values from the photo resistor and controlling the
+                  servo motor is programmed using the Arduino IDE.</p>
+                  <h2>HC-05 Bluetooth Module</h2>
+                  <p class="card-text">To allow the user to control the blinds directly the HC-05 Bluetooth module is used. The HC-05 can connect directly to the Arduino Serial Port to allow
+                  data to be sent and recieved. The HC-05 recieves data from a external device that tells the arduino to run in "Ambient Mode" or to allow for direct user control. The HC-05
+                  also controls the blinds directly by recieving degree angles from a external device.</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="Pictures\project-smartblinds pics\arduinoblinds.JPG" class="card-img-top" alt="Hps Daily Project preview">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java Development  -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style="">
+            <div class="row">
+              <div class="col-6">
+                <h1 class="card-title">Arduino IDE / Java  App Development</h1>
+                <div class="card-body">
+                  <h2>Arduino IDE</h2>
+                  <p class="card-text"></p>
+                  <h2>Java App Development</h2>
+                  <p class="card-text">To allow the user to control the blinds directly the HC-05 Bluetooth module is used. The HC-05 can connect directly to the Arduino Serial Port to allow
+                  data to be sent and recieved. The HC-05 recieves data from a external device that tells the arduino to run in "Ambient Mode" or to allow for direct user control. The HC-05
+                  also controls the blinds directly by recieving degree angles from a external device.</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="Pictures\project-smartblinds pics\arduinoblinds.JPG" class="card-img-top" alt="Hps Daily Project preview">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
 
 
