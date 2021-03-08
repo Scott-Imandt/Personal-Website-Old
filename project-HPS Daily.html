@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Projects - Scott Imandt</title>
+  <title>HPS Daily - Scott Imandt</title>
 
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -16,6 +16,9 @@
   <!-- index css file -->
   <link rel="stylesheet" href="stylesheets/projectoverview-styles.css">
 
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lobster&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,8 +47,8 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="title-h1">HPS Daily</h1>
-          <h2 class="title-h2">A website that allowied students to keep up tyo date on school activities</h2>
+          <h1 class="title-h1"id = "mainTitle">HPS Daily</h1>
+          <h2 class="title-h2">A website that allowied students to keep up to date on school activities</h2>
         </div>
         <div class="col-lg-6">
           <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -57,13 +60,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Pictures\project pics\project-hpsdaily-preview.png" class="d-block w-100 h-100" alt="Smart Blinds Main Board">
+                <img src="Pictures\project-HPS Daily pics\HPS Daily day 2.png" class="d-block w-100 h-100" alt="Smart Blinds Main Board">
               </div>
               <div class="carousel-item">
-                <img src="Pictures\project pics\project-hpsdaily-preview.png" class="d-block w-100 h-100" alt="Smart Blinds Andoid Studio">
+                <img src="Pictures\project-HPS Daily pics\HPS Daily openclose.png" class="d-block w-100 h-100" alt="Smart Blinds Andoid Studio">
               </div>
               <div class="carousel-item">
-                <img src="Pictures\project pics\project-hpsdaily-preview.png" class="d-block w-100 h-100" alt="Smart Blinds App">
+                <img src="Pictures\project-HPS Daily pics\HPS Daily Firebase Example.png" class="d-block w-100 h-100" alt="Smart Blinds App">
               </div>
               <div class="carousel-item">
                 <img src="Pictures\project pics\project-hpsdaily-preview.png" class="d-block w-100 h-100" alt="Smart Blinds App">
@@ -87,49 +90,191 @@
     <div class="container-fluid">
       <div class="row">
 
-        <!-- Project 1  Smart Blinds-->
+        <!-- jumpto-->
         <div class="col-lg-4 col-ms-12">
           <div class="card" style="">
             <h1 class="card-title">Jump To</h1>
-              <div class="card-body">
-                <ul>
-                  <li>
-                    <a href="#">Video</a>
-                  </li>
-                  <li>
-                    <a href="#">Summary</a>
-                  </li>
-                  <li>
-                    <a href="#">Arduino</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <a href="#objective">Objective</a>
+                </li>
+                <li>
+                  <a href="#html">HTML/CSS</a>
+                </li>
+                <li>
+                  <a href="#firebase">Google FireBase</a>
+                </li>
+                <li>
+                  <a href="#calendar">Google Calendar</a>
+                </li>
+                <li>
+                  <a href="#conclusion">Conclusion</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Project 2  Trail Application-->
+        <!-- Overview-->
         <div class="col-lg-8 col-ms-12">
           <div class="card" style="">
-                <h1 class="card-title">Overview</h1>
-                <div class="card-body">
-                  <p class="card-text">A Java Application that allows a user to record trail history</p>
-                </div>
+            <h1 class="card-title">Overview</h1>
+            <div class="card-body">
+              <p class="card-text">HPS Daily is a website that allows users to check upcoming events such as day type (Day 1 / Day 2). This is done using the Google Calendar API.
+                HPS Daily also informs users if clubs are ongoing or canceled. This is done using the Google Firebase database. The website also prioritizes mobile users and is
+                designed with HTML and CSS to ensure that the mobile view is clean and simple.</p>
+            </div>
           </div>
         </div>
 
-        <!-- Project 3  HPS Daily-->
+        <!-- Objective-->
         <div class="col-lg-12 col-ms-12">
-          <div class="card" style="">
+          <div class="card" style=""id = "objective">
             <div class="row">
-              <div class="col-6">
-                <h1 class="card-title">Arduino</h1>
+              <div class="col-lg-12 col-ms-12">
+                <h1 class="card-title">Objective</h1>
                 <div class="card-body">
-                  <p class="card-text">A website that allowied students to keep up tyo date on school activities</p>
-                  <p class="card-text">Utilized: HTML, CSS, JavaScript, Google Calendar API, Google FireBase Database</p>
+                  <p class="card-text">The Goal for HPS Daily is to create a website that users can sign into and get notified about ongoing school events. It is necessary to have a
+                    system in place so admins can change day/club info without coding experience. It is also important to allow users the ability to use HPS Daily on a mobile phone
+                    and still have a clean simple interface. </p>
                 </div>
               </div>
-              <div class="col-6">
-                <img src="Pictures\project-smartblinds pics\arduinoblinds.JPG" class="card-img-top" alt="Hps Daily Project preview">
+            </div>
+          </div>
+        </div>
+
+        <!-- HTML / CSS-->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style="" id = "html">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">HTML/CSS</h1>
+                <div class="card-body">
+                  <p class="card-text"> When design the website it was important to have a simple and clean interface that was also consistent between multiple pages. For this website,
+                    I used bootstrap to help structure the website so both mobile and desktop versions of the website were responsive. For this website, I also imported Custom fonts
+                    from fonts.googleapi to further customize the look of the website.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <div id="carouselIndicatorshtml" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicatorshtml" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorshtml" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorshtml" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorshtml" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily index.png" class="d-block w-100 h-100" alt="hps daily index">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily openclose.png" class="d-block w-100 h-100" alt="hps daily open close">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily Announcments.png" class="d-block w-100 h-100" alt="hps daily annoucments">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily social.png" class="d-block w-100 h-100" alt="hps daily social">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorshtml" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorshtml" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Firebase-->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "firebase">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">Google Firebase</h1>
+                <div class="card-body">
+                  <p class="card-text">Creating an account verification system so admins can sign in and edit club/sport information was necessary for the success of this website.
+                    Firebase allowed me to implement a user login and account verification system. If a user signs into my website they also inadvertently signed into the database
+                    that stored all the club/sport info. If the user tried to change the state of a club, the database would verify the user before applying any changes. This system
+                    was perfect and allowed admins to sign onto the website and only allow admins to change any information in the database. </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <div id="carouselIndicatorsfire" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicatorsfire" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsfire" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsfire" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily  signin.png" class="d-block w-100 h-100" alt="Firebase implimentaion pic">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily Firebase Example.png" class="d-block w-100 h-100" alt="login pic">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-HPS Daily pics\HPS Daily firebase code.png" class="d-block w-100 h-100" alt="firebase code pic">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsfire" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsfire" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Calendar-->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style="" id = "calendar">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">Google Calendar</h1>
+                <div class="card-body">
+                  <p class="card-text"> The google calendar API allows admins to edit day-to-day events like (Day1/Day2) all with google calendar. This makes so someone with zero coding
+                    experience can edit day-to-day notifications. This is important because the plan for this website is to run without manually changing the code to update a notification.
+                    This also allows the person that is hosting the website to directly add existing calendar events to the website without having to recreate all the events for the whole
+                    year. </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\project-HPS Daily pics\HPS Daily Calendar API.png" class="card-img-top" alt="google calendar pic">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusion-->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "conclusion">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">Conclusion</h1>
+                <div class="card-body">
+                  <p class="card-text"> After completing this project the implementation of google calendar and google's Firebase was a complete success. I achieved my goal of website editing
+                    without the need to change code. This website didn't take long to develop but took very long to get approval. I needed to conference with the principal and superintendent
+                    of the school multiple times just to get permission to post the site. I also had to make a lot of documentation on the website such as posters to put up, an admin form
+                    for faculty to fill out to gather usernames emails and passwords and club information. I also had to present this website to all of the faculty at the school that it was
+                    being deployed at. All of this took a lot of time, as a result of this the website only had two months of exposure before it was no longer needed due to summer recess.
+                    I wish I had more time to advertise the website so its implementation could be used for future students. This project allowed me to experience the development side of
+                    building a website and the logistical side of going to conferences and meetings.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\project-HPS Daily pics\HPS Daily day 2.png" class="card-img-top" alt="Hps Daily Project pic">
               </div>
             </div>
           </div>

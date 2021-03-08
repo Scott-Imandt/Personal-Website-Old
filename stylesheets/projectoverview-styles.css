@@ -1,5 +1,6 @@
 body {
   background-color: #eeeeee;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 h1 {
@@ -10,27 +11,52 @@ h2 {
   color: #eeeeee;
 }
 
+a{
+  color: #00adb5;
+}
+a:hover{
+  color: #eeeeee;
+}
+
+td{
+  padding: 25px;
+  text-align: left;
+}
+
 /* Title Section editors */
 .navbar{
   color: #eeeeee;
+  margin: auto;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  font-family: 'Lobster','Merriweather Sans', sans-serif;
 }
 
 .navbar-brand{
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar-dark .navbar-brand {
-    color: #00adb5;
+  color: #00adb5;
+}
+
+#mainTitle{
+  font-size: 5.5rem;
+  font-weight: 500;
+  font-family: 'Lobster','Merriweather Sans', sans-serif;
 }
 
 #title {
   background-color: #393e46;
+
 }
 
 .title-h1 {
   margin-top: 10%;
   font-size: 4.5rem;
   text-align: center;
+  font-family: 'Kalam','Merriweather Sans', sans-serif;
 }
 
 .title-h2 {
@@ -49,18 +75,30 @@ h2 {
 
 /* about section editors */
 
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 #00adb5, 0 6px 20px 0 rgba(0, 0, 0, 0.90);
+}
+
 .card{
   background-color: #393e46;
   color: #eeeeee;
   border-color: #00adb5;
   border-width: thick;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
 }
 
 .card-title{
   color: #00adb5;
-  font-weight: 700;
+  font-size: 3.5rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Kalam','Merriweather Sans', sans-serif;
+}
+
+.card-text{
+  text-align: justify;
 }
 
 .card-img-top{

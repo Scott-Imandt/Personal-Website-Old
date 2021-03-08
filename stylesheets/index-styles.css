@@ -1,9 +1,11 @@
 body {
   background-color: #eeeeee;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 h1 {
   color: #00adb5;
+  font-family: 'Lobster','Merriweather Sans', sans-serif;
 }
 
 h2 {
@@ -13,11 +15,14 @@ h2 {
 /* Title Section editors */
 .navbar{
   color: #eeeeee;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
 
 }
 
 .navbar-brand{
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar-dark .navbar-brand {
@@ -26,11 +31,12 @@ h2 {
 
 #title {
   background-color: #393e46;
+  font-family: 'Lobster','Merriweather Sans', sans-serif;
 }
 
 .title-h1 {
   margin-top: 20%;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   text-align: center;
 }
 
@@ -60,6 +66,7 @@ text-align: center;
 }
 
 .btn{
+  display: block;
   margin: 10px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50)
 }
@@ -81,7 +88,7 @@ text-align: center;
 
 .card-title{
   color: #00adb5;
-  font-weight: 700;
+  font-size: 3rem;
 }
 
 .card-img-top{

@@ -15,7 +15,9 @@
 
   <!-- index css file -->
   <link rel="stylesheet" href="stylesheets/projectoverview-styles.css">
-
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lobster&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,9 +46,10 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="title-h1">Smart Blinds</h1>
+          <h1 class="title-h1" id = "mainTitle">Smart Blinds</h1>
           <h2 class="title-h2">Smart Blinds that move on there own</h2>
         </div>
+
         <div class="col-lg-6">
           <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -78,9 +81,8 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-
-
         </div>
+
       </div>
 
   </section>
@@ -93,59 +95,57 @@
         <div class="col-lg-4 col-ms-12">
           <div class="card" style="">
             <h1 class="card-title">Jump To</h1>
-              <div class="card-body">
-                <ul>
-                  <li>
-                    <a href="#">Overview</a>
-                  </li>
-                  <li>
-                    <a href="#">Objective</a>
-                  </li>
-                  <li>
-                    <a href="#">Components</a>
-                  </li>
-                  <li>
-                    <a href="#">Arduino Controller/HC-05</a>
-                  </li>
-                  <li>
-                    <a href="#">Arduino IDE / Java App Develoment</a>
-                  </li>
-                  <li>
-                    <a href="#">Easy EDA PCB Design</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <a href="#objective">Objective</a>
+                </li>
+                <li>
+                  <a href="#components">Components</a>
+                </li>
+                <li>
+                  <a href="#arduino/HC-05">Arduino Controller/HC-05</a>
+                </li>
+                <li>
+                  <a href="#IDE/java">Arduino IDE / Java App Develoment</a>
+                </li>
+                <li>
+                  <a href="#EDA">Easy EDA PCB Design</a>
+                </li>
+                <li>
+                  <a href="#conclusionblinds">Conclusion</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <!-- Overview-->
         <div class="col-lg-8 col-ms-12">
           <div class="card" style="">
-                <h1 class="card-title">Overview</h1>
-                <div class="card-body">
-                  <p class="card-text">The smart blinds project was a concept that I created on my own. This was a great project to learn and develop my skills as a
-                  Software Engineer and was a great opertunity to learn about eletronic components and how they operate. The smart blinds basic function is to open an close automaticly
-                based on the time of day that it is. If for example it is a sunny day out the blinds will open, rather if it is night time, the blinds will close.If the user wishes
-              to overide smart function they can manually control the blinds on a smartphone app.</p>
-                </div>
+            <h1 class="card-title">Overview</h1>
+            <div class="card-body">
+              <p class="card-text">The smart blinds project was a concept that I created on my own. This was a great project to learn and develop my skills as a Software Engineer
+                and was a great opportunity to learn about electronic components and how they operate. The smart blind's basic function is to open and close automatically based
+                on the time of day that it is. If for example, it is a sunny day out the blinds will open, rather if it is nighttime, the blinds will close. If the user wishes
+                to override smart function they can manually control the blinds on a smartphone app.</p>
+            </div>
           </div>
         </div>
 
         <!-- Objective -->
         <div class="col-lg-12 col-ms-12">
-          <div class="card" style="">
+          <div class="card" style=""id = "objective">
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-12 col-ms-12">
                 <h1 class="card-title">Objective</h1>
                 <div class="card-body">
-                  <p class="card-text">The goal for the smart blinds project is to create a project that both utilizes hardware and software development. The purpose of
-                  this is to learn and develop my own skills as a software and hardware developer. The Smart Blinds project was perfect for this becasue it is a very simple idea (open and close blinds)
-                that can be expanded. There are two major conflicts that have to be solved for this project. First To develop a hardware solution to physically move the blinds accuretly accoring to
-              enviromental conditions or user desired degree. The Second Conflict is to give the user a reliable way to control the blinds using simple software control.</p>
+                  <p class="card-text">The goal for the smart blinds project is to create a project that both utilizes hardware and software development. The purpose of this is to learn
+                    and develop my skills as a software and hardware developer. The Smart Blinds project was perfect for this because it is a very simple idea (open and close blinds)
+                    that can be expanded upon. Two major conflicts would have to be solved for this project. First To develop a hardware solution to physically move the blinds accurately
+                    according to the environmental conditions or to move the blinds to a user desired degree. The Second conflict is to give the user a reliable way to control the blinds
+                    using simple software control.</p>
                 </div>
-              </div>
-              <div class="col-6">
-                <img src="Pictures\project-smartblinds pics\arduinoblinds.JPG" class="card-img-top" alt="Hps Daily Project preview">
               </div>
             </div>
           </div>
@@ -153,29 +153,29 @@
 
         <!-- Components Used -->
         <div class="col-lg-12 col-ms-12">
-          <div class="card" style="">
+          <div class="card" style="" id = "components">
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-6 col-ms-12">
                 <h1 class="card-title">Components</h1>
                 <div class="card-body">
                   <p class="card-text">
-                    <ul>
-                      <li>2x Servo Motor (20kg)</li>
-                      <li>Arduino Nano</li>
-                      <li>HC-05 Bluetooth Module</li>
-                      <li>Photo Resistor</li>
-                      <li>Buck Converter</li>
-                      <li>12v AC DC Power Supply</li>
-                      <li>220 ohm Ressistor</li>
-                      <li>2x 100uf Capacitor</li>
-                      <li>Custom PCB / Home made solderd breadboard</li>
-                      <li>22 AWG wire</li>
-                    </ul>
+                  <ul>
+                    <li>2x Servo Motor (20kg)</li>
+                    <li>Arduino Nano</li>
+                    <li>HC-05 Bluetooth Module</li>
+                    <li>Photo Resistor</li>
+                    <li>Buck Converter</li>
+                    <li>12v AC DC Power Supply</li>
+                    <li>220 ohm Ressistor</li>
+                    <li>2x 100uf Capacitor</li>
+                    <li>Custom PCB / Home made soldered breadboard</li>
+                    <li>22 AWG wire</li>
+                  </ul>
                   </p>
                 </div>
               </div>
-              <div class="col-6">
-                <img src="Pictures\project-smartblinds pics\smart blinds components.jpg" class="card-img-top" alt="Smart Blinds Component pic">
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\project-smartblinds pics\smart blinds servo.jpg" class="card-img-top" alt="Smart Blinds Component pic">
               </div>
             </div>
           </div>
@@ -183,57 +183,153 @@
 
         <!-- Arduino / HC-05  -->
         <div class="col-lg-12 col-ms-12">
-          <div class="card" style="">
+          <div class="card" style="" id = "arduino/HC-05">
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-6 col-ms-12">
                 <h1 class="card-title">Arduino / HC-05</h1>
                 <div class="card-body">
                   <h2>Arduino</h2>
-                  <p class="card-text">To control Blinds the best option was to use the Arduino Micro Controller. The Arduino Micro Crontroller
-                  is great at controlling electronic componets by using it's digital pin outs and its anolog pinouts.The arduino takes the analog signal from the photo resistor and converts
-                  it into a degree value for the servo motors. As more light hits the photo resistor the more degrees the servo motor will turn capping it at 90 degrees which is fully open.
-                  Once the degree value it converted the arduino uses its PWN digital pins to tell the servo to move to a specific degree. Reading the values from the photo resistor and controlling the
-                  servo motor is programmed using the Arduino IDE.</p>
+                  <p class="card-text">To control Blinds the best option was to use the Arduino Micro Controller. The Arduino Micro Controller is great at controlling electronic components by
+                    using its digital pinouts and its analog pinouts. The Arduino takes the analog signal from the photoresistor and converts it into a degree value for the servo motors. As
+                    more light hits the photoresistor the more degrees the servo motor will turn to cap it at 90 degrees which would be fully open.Once the degree value is converted the
+                    Arduino uses its PWN digital pins to tell the servo to move to a specific degree. Reading the values from the photoresistor and controlling the servo motor is programmed
+                    using the Arduino IDE.</p>
                   <h2>HC-05 Bluetooth Module</h2>
                   <p class="card-text">To allow the user to control the blinds directly the HC-05 Bluetooth module is used. The HC-05 can connect directly to the Arduino Serial Port to allow
-                  data to be sent and recieved. The HC-05 recieves data from a external device that tells the arduino to run in "Ambient Mode" or to allow for direct user control. The HC-05
-                  also controls the blinds directly by recieving degree angles from a external device.</p>
+                    data to be sent and received. The HC-05 receives data from an external device that tells the Arduino to run in "Ambient Mode" or to allow for direct user control. The HC-05
+                    also controls the blinds directly by receiving degree angles from an external device.</p>
                 </div>
               </div>
-              <div class="col-6">
-                <img src="Pictures\project-smartblinds pics\arduinoblinds.JPG" class="card-img-top" alt="Hps Daily Project preview">
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\project-smartblinds pics\smart blinds components.jpg" class="card-img-top" alt="Smart Blinds Component pic">
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Java Development  -->
+        <!-- Arduino IDE / Java Development  -->
         <div class="col-lg-12 col-ms-12">
-          <div class="card" style="">
+          <div class="card" style=""id = "IDE/java">
             <div class="row">
-              <div class="col-6">
-                <h1 class="card-title">Arduino IDE / Java  App Development</h1>
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">Arduino IDE / Java App Development</h1>
                 <div class="card-body">
                   <h2>Arduino IDE</h2>
-                  <p class="card-text"></p>
+                  <p class="card-text">In the Arduino software three is 6 variables declared. The first two are Servo myServo and Servo myServo2. These Servo variables are the Servo
+                    motors that control the blinds. The other four are all integers. The variables are int val, int phase, int outputValue and int data. Int val is the value returned from the
+                    photoresistor. Once the photoresistor value is stored it is mapped between 0-90 degrees and written to the servo motors. Int phase is the state that the Arduino controller is in.
+                    The int value controls if the blinds run automaticly or if they are user controled. The int data is the value that the hc-05 recieves from the phone app. the outputValue is the value written to
+                    the servo motors after the int value data is convert to 0-90 degrees. This program runs continuosly with a delay of 100 mili seconds</p>
                   <h2>Java App Development</h2>
-                  <p class="card-text">To allow the user to control the blinds directly the HC-05 Bluetooth module is used. The HC-05 can connect directly to the Arduino Serial Port to allow
-                  data to be sent and recieved. The HC-05 recieves data from a external device that tells the arduino to run in "Ambient Mode" or to allow for direct user control. The HC-05
-                  also controls the blinds directly by recieving degree angles from a external device.</p>
+                  <p class="card-text">In the Arduino software, there are 6 variables declared. The first two are Servo myServo and Servo myServo2. These Servo variables are the Servo
+                    motors that control the blinds. The other four are all integers. The variables are int val, int phase, int outputValue, and int data. Int val is the value returned
+                    from the photoresistor. Once the photoresistor value is stored it is mapped between 0-90 degrees and written to the servo motors. Int phase is the state that the
+                    Arduino controller is in. The int value controls if the blinds run automatically or if they are user-controlled. The int data is the value that the HC-05 receives
+                    from the phone app. the outputValue is the value written to the servo motors after the int value data is converted to 0-90 degrees. This program runs continuously
+                    with a delay of 100 mili-seconds</p>
                 </div>
               </div>
-              <div class="col-6">
-                <img src="Pictures\project-smartblinds pics\arduinoblinds.JPG" class="card-img-top" alt="Hps Daily Project preview">
+              <div class="col-lg-6 col-ms-12">
+                <div id="carouselIndicatorsDEV" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicatorsDEV" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsDEV" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsDEV" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Pictures\project-smartblinds pics\arduinoblinds.jpg" class="d-block w-100 h-100" alt="Smart Blinds Main Board">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-smartblinds pics\Android studioblinds code.JPG" class="d-block w-100 h-100" alt="Smart Blinds Andoid Studio">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-smartblinds pics\smart blinds app.jpg" class="d-block w-100 h-100" alt="Smart Blinds Andoid Studio">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsDEV" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsDEV" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Easy EDA PCB DESIGN  -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "EDA">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">Easy EDA PCB Design</h1>
+                <div class="card-body">
+                  <p class="card-text">Easy EDA allowed me to create and save a schematic of my electronic circuit. This allows me to view my circuit design electronically clearly and
+                    concisely. This also creates a record of my work so if I want to make any revisions I can do so without having to redraw the circuit again. Easy EDA also allowed me
+                    to convert my drawn schematic into a PCB File. Once I converted my schematic into a PCB I needed to route the PCB lines to the correct component and create any additional
+                    pinouts. Once that is all completed Easy EDA has a printing service that takes your PCB file that you created and make a physical version for your Application</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <div id="carouselIndicatorsEDA" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicatorsEDA" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsEDA" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsEDA" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Pictures\project-smartblinds pics\Blinds Schematic .png" class="d-block w-100 h-100" alt="Blinds schematic">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-smartblinds pics\Blinds PCB.png" class="d-block w-100 h-100" alt="Blinds PCB Pic">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Pictures\project-smartblinds pics\smart blinds mb.jpg" class="d-block w-100 h-100" alt="Smart Blinds MB">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsEDA" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsEDA" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-
-
-
+        <!-- Conclutions  -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style="" id = "conclusionblinds">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">Conclusion</h1>
+                <div class="card-body">
+                  <p class="card-text">The objective to utilize both hardware and software in this project I feel I completed this task. This project taught me a lot about software
+                    and hardware development. After using this project for over 6 months I have thought of new things I would like to implement into this project. I would like to
+                    first revise my Arduino software. Rather than using two if statements I believe I can accomplish the same thing using a switch statement. I would also like to
+                    store the degree values of the blinds so can digitally calibrate the blinds to the same angle rather than physically adjusting them during setup. Also, I would
+                    further develop the android app to add a reconnect button if the connection is timed out or closed and I would like to add more styling than just a plain white
+                    app. Finally, I would love to revise the PCB design I created. I would like to add a quick Physical disconnect for the TX and RX pins on the HC-05 so I can
+                    upload new and improved software to the Arduino without having to desolder the unit. This was a crazy project that didn't start the same way it concluded.
+                    Initially, this project used an IR receiver and a remote controller to control the blinds and a battery and solar panels to power it. It was only after
+                    prototyping was I able to refine the project to what it is today.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\project-smartblinds pics\smart blinds main board.jpg" class="card-img-top" alt="Hps Daily Project preview">
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
