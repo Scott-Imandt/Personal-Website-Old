@@ -27,18 +27,26 @@ td{
 .navbar{
   color: #eeeeee;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 15px;
   font-family: 'Lobster','Merriweather Sans', sans-serif;
 }
 
 .navbar-brand{
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .navbar-dark .navbar-brand {
   color: #00adb5;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:#eeeeeeee;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#eeeeee63;
 }
 
 #mainTitle{
@@ -49,7 +57,6 @@ td{
 
 #title {
   background-color: #393e46;
-
 }
 
 .title-h1 {
@@ -69,16 +76,38 @@ td{
   padding: 3% 7.5%;
 }
 
-.btn:hover{
- box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.title-img {
+  height: 550px;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+.title-icons {
+  width: 100px;
+}
+.icons{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.btn{
+  display: block;
+  margin: 10px;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.50)
+}
+
+.btn:hover{
+  box-shadow: 0 0px 8px 1px #00f2ff, 0 6px 20px 0 rgba(0,0,0,0.90);
+}
+
+
 
 /* about section editors */
 
 
-.card:hover {
-  box-shadow: 0 4px 8px 0 #00adb5, 0 6px 20px 0 rgba(0, 0, 0, 0.90);
-}
 
 .card{
   background-color: #393e46;
