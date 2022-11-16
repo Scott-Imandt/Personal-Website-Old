@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hiking App - Scott Imandt</title>
+  <title>Fence Project - Scott Imandt</title>
 
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -46,11 +46,11 @@
 
       <div class="row">
         <div class="col-lg-6" style="margin-bottom: 30px;">
-          <h1 class="title-h1" id = "mainTitle">Hiking App</h1>
-          <h2 class="title-h2">A Java Application that allows a user to record trail history</h2>
+          <h1 class="title-h1" id = "mainTitle">Fence Project</h1>
+          <h2 class="title-h2">A radio controlled arduino system that connects to a webserver</h2>
           <!-- Github Link -->
           <div class="col-4 icons">
-            <a class="btn"href="https://github.com/Scott-Imandt/CSE248HikingApp">
+            <a class="btn"href="https://github.com/Scott-Imandt/Fence-Project">
             <img class="title-icons" src="Pictures/index pics/githubicon.svg" alt="GitHub Icon Link">
             </a>
           </div>
@@ -98,7 +98,7 @@
     <div class="container-fluid">
       <div class="row">
 
-        <!-- Jump To Trails Project-->
+        <!-- Jump To Fence Project-->
         <div class="col-lg-4 col-ms-12">
           <div class="card" style="">
             <h1 class="card-title">Jump To</h1>
@@ -108,13 +108,13 @@
                   <a href="#objective">Objective</a>
                 </li>
                 <li>
-                  <a href="#datastructure">Data Structures</a>
+                  <a></a>
                 </li>
                 <li>
-                  <a href="#java">Java Development</a>
+                  <a></a>
                 </li>
                 <li>
-                  <a href="#scene">Scene Builder</a>
+                  <a></a>
                 </li>
                 <li>
                   <a href="#conclusion">Conclusion</a>
@@ -148,71 +148,6 @@
                     and saved to their account. It is also important to have an admin login that can remove trails and users. Admins should also have the ability to create
                     new trails for users.</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Data Structures  -->
-        <div class="col-lg-12 col-ms-12">
-          <div class="card" style="" id = "datastructure">
-            <div class="row">
-              <div class="col-lg-6 col-ms-12">
-                <h1 class="card-title">Data Structures</h1>
-                <div class="card-body">
-                  <h2>Trail Storage</h2>
-                  <p class="card-text">To store trail information the data structure I chose was a TreeSet. Using a tree-based structure is perfect for storing information that needs to be searched and filtered. Using trees you
-                    can sort and store information. This is great because if you need to search for that information you don't have to iterate over all the data. Treeset was used since the treeset implements Collections, so searching
-                    the tree using streams was possible.</p>
-                  <h2>User Storage</h2>
-                  <p class="card-text">To store user accounts the data structure I picked was the Hashtable. A Hash Table is a dynamic hashed structure, this means that the structure stores linked
-                    lists rather than the user object itself. This is great because there is no need to worry about collisions anymore. If two users hash into the same location the new user will
-                    just get added to the top of the linked list at that location preserving the location of the other user. The hashtable is also self-balancing so if the loading factor gets to
-                    be above .75 (Default) the hashtable will expand to accommodate the new user.</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-ms-12">
-                <img src="Pictures\project-trail pics\trail admin panel.JPG" class="card-img-top" alt="Smart Blinds Component pic">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Java Code  -->
-        <div class="col-lg-12 col-ms-12">
-          <div class="card" style=""id = "java">
-            <div class="row">
-              <div class="col-lg-6 col-ms-12">
-                <h1 class="card-title">Java Development</h1>
-                <div class="card-body">
-
-                  <p class="card-text">In the application, objects are created for users, trails, calendar entries, and user and trail storage. Once the program is terminated the exit code copies
-                    the data from the user and trail storage and saves it to the save file object. The save file object then gets saved as a .dat file. Once the application is restarted the program
-                    checks to see if the .dat file exists or not. If the file doesn't exist the program will create the user and the trail data structures and prefill them with essential objects
-                    like an admin user and default trails. If the data file already exists then the application will load the .dat file.</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-ms-12">
-                <img src="Pictures\project-trail pics\trail code.JPG" class="card-img-top" alt="Smart Blinds Component pic">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- scene builder -->
-        <div class="col-lg-12 col-ms-12">
-          <div class="card" style=""id = "scene">
-            <div class="row">
-              <div class="col-lg-6 col-ms-12">
-                <h1 class="card-title">Scene Builder</h1>
-                <div class="card-body">
-                  <p class="card-text">cene builder was very important in the development process of this project. Scene builder allowed me to visually design my project to look exactly like I wanted
-                    it. Scene Builder also made the GUI execution process so much easier. This was because I was able to directly edit the FXML file that Scene Builder created to my Java controller.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-ms-12">
-                <img src="Pictures\project-trail pics\Scene Builder.jpg" class="card-img-top" alt="Smart Blinds Component pic">
               </div>
             </div>
           </div>
