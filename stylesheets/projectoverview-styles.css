@@ -142,6 +142,19 @@ margin-right: auto;
   margin: auto;
 }
 
+.card-text-textAlign{
+  text-align: center;
+}
+
+#ResumeButton{
+  color: #00adb5;
+  font-size: 3.5rem;
+  font-family: 'Kalam','Merriweather Sans', sans-serif; 
+}
+
+.card-body-Text-align{
+  text-align: center;
+}
 
 /* carousel editors */
 
