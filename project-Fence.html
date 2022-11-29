@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-lg-6" style="margin-bottom: 30px;">
           <h1 class="title-h1" id = "mainTitle">Fence Project</h1>
-          <h2 class="title-h2">A radio controlled arduino system that connects to a webserver</h2>
+          <h2 class="title-h2">A radio controlled Arduino system that connects to a webserver</h2>
           <!-- Github Link -->
           <div class="col-4 icons">
             <a class="btn"href="https://github.com/Scott-Imandt/Fence-Project">
@@ -66,16 +66,16 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Pictures\project-trail pics\project-trail-preview.png" class="d-block w-100 h-100" alt="Project trail preview">
+                <img src="Pictures\Project-Fence pics\Fence Overview.jpg" class="d-block w-100 h-100" alt="Fence Overview">
               </div>
               <div class="carousel-item">
-                <img src="Pictures\project-trail pics\trailoverview.JPG" class="d-block w-100 h-100" alt="Trail Overview">
+                <img src="Pictures\Project-Fence pics\WebServer.jpg" class="d-block w-100 h-100" alt="Webserver">
               </div>
               <div class="carousel-item">
-                <img src="Pictures\project-trail pics\trail create.jpg" class="d-block w-100 h-100" alt="Trail code">
+                <img src="Pictures\Project-Fence pics\PCB Client.jpg" class="d-block w-100 h-100" alt="PCB">
               </div>
               <div class="carousel-item">
-                <img src="Pictures\project-trail pics\trail Account.JPG" class="d-block w-100 h-100" alt="Trail Account">
+                <img src="Pictures\Project-Fence pics\Server .jpg" class="d-block w-100 h-100" alt="Server">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -108,16 +108,22 @@
                   <a href="#objective">Objective</a>
                 </li>
                 <li>
-                  <a></a>
+                  <a href="#NRF Module">NRF Module</a>
                 </li>
                 <li>
-                  <a></a>
+                  <a href="#Webserver">WebServer</a>
                 </li>
                 <li>
-                  <a></a>
+                  <a href="#BMS">BMS System</a>
+                </li>
+                <li>
+                  <a href="#EDA">EasyEDA / 3D Modeling</a>
                 </li>
                 <li>
                   <a href="#conclusion">Conclusion</a>
+                </li>
+                <li>
+                  <a href="#Future">Future Development</a>
                 </li>
               </ul>
             </div>
@@ -129,9 +135,9 @@
           <div class="card" style="">
             <h1 class="card-title">Overview</h1>
             <div class="card-body">
-              <p class="card-text">The Trail Recorder application is an app that allows a user to store hiking information from the trails. This information includes
-                Distance Hiked, average pace (Precalculated) Duration Hiked, Date Hiked, and Optional Picture upload from the hike. This Application uses Java and
-                JavaFX with the data structures HashTable and TreeSet.</p>
+              <p class="card-text">The Fence Project is a wireless system that communicates between a client and server to inform the user if a fence gate is either open or closed.
+                The user can be informed by either looking at the server box at the red LED indicator lights, or by loading the webserver hosted on the local network.
+              </p>
             </div>
           </div>
         </div>
@@ -143,11 +149,93 @@
               <div class="col-lg-12 col-ms-12">
                 <h1 class="card-title">Objective</h1>
                 <div class="card-body">
-                  <p class="card-text">The Objective of the trail recording application is to have persistent storage of users and trails. Users should have the ability to
-                    sign up/in. The user should also have the ability to search for trails by character and select a trail to record. The user's trail should be recorded
-                    and saved to their account. It is also important to have an admin login that can remove trails and users. Admins should also have the ability to create
-                    new trails for users.</p>
+                  <p class="card-text">The Objective of the Fence Project is to create a reliable wireless system that can inform a user if the physical fence gate is either open or closed.
+                    The purpose of this system is to tell the user whether the backyard perimeter is secure and safe to let pets roam or if the perimeter is not secure and requires user intervention before letting a pet outside.
+                    The goal is to be able to let pets out without having a risk of them getting lost outside the backyard.
+                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NRF Module -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "NRF Module">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">NRF Module</h1>
+                <div class="card-body">
+                  <p class="card-text">The NRF Modules are configured in such a way that they communicate reliably. First, the NRF modules (one per client)get the gate status (Open or closed) and store this information in an array.
+                    The array stores two variables. The first variable is a fixed value to indicate the fence number(This number is unique for every client). The second number is the new state of the fence. The communication system is
+                    implemented in a reliable manner. The client will send its new status to the server. Once the server gets the new gate information the server will communicate back to the client informing them that they have received the message.
+                    The client will continually attempt to communicate with the server until the client receives the return message.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\Project-Fence pics\NRF Module.jpg" class="card-img-top" alt="NRF Picture">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WebServer -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "Webserver">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">WebServer</h1>
+                <div class="card-body">
+                  <p class="card-text">The Webserver uses an ESP 32 with built-in network capabilities to host the webserver. If a client connects to the webserver hosted at a set IP, the ESP 32 will send raw HTML to the user with the current fence information.
+                    When the server receives new fence information from the fence client it will update the raw HTML with the new information. This communication is done with another NFR module attached to the ESP 32.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\Project-Fence pics\WebServer.jpg" class="card-img-top" alt="Webserver Picture">
+              </div>
+            </div>
+          </div>
+        </div>       
+
+        <!-- BMS System -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "BMS">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">BMS System</h1>
+                <div class="card-body">
+                  <p class="card-text">The Fence project runs off of 2x 18650 lithium-ion batteries. These batteries are connected in series to produce a peak voltage of 8.4 volts. Since this system runs on batteries the system power draw must be as low as possible.
+                    This can be achieved by first limiting the number of communications between the server and the client. Secondly, after reading the NRF module's source code I discovered that they have a low power state. This low power states buts the NRF modules in standby-like mode to reduce power draw while idle. As well as reducing the amount of power drawn the system is also hooked up
+                    to a solar panel to help recharge the batteries during the day time. This system provides a constant voltage to the BMS system to recharge and power the system.
+                    The batteries are wired to a BMS controller that regulates the batteries to ensure that they have similar voltages and that they can charge and discharge safely without risk of overcharge or over discharge.
+
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\Project-Fence pics\BMS.jpg" class="card-img-top" alt="BMS Picture">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EasyEDA / 3D Modeling -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "EDA">
+            <div class="row">
+              <div class="col-lg-6 col-ms-12">
+                <h1 class="card-title">EasyEDA / 3D Modeling</h1>
+                <div class="card-body">
+                  <p class="card-text">The Fence Project client has a custom PCB to help wire all the modules/parts together. Since multiple clients can connect to one server it was
+                     important to be able to create multiple clients quickly and reliably. This project also requires that it be installed in a weatherproof case since it will be installed
+                      outside and exposed to varies elements. This case that the technology is housed in is modeled in Fusion 360 modeling software. After multiple prototypes, the final version of the case was 3d printed in PETG plastic. 
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-ms-12">
+                <img src="Pictures\Project-Fence pics\The Fence Project Models.png" class="card-img-top" alt="Software Picture">
               </div>
             </div>
           </div>
@@ -160,19 +248,35 @@
               <div class="col-lg-6 col-ms-12">
                 <h1 class="card-title">Conclusion</h1>
                 <div class="card-body">
-                  <p class="card-text">After completing this project I have successfully completed my goal of a persistent application that stores user and trail data. This project allowed me to learn
-                    how to use scene builder and how to properly implement the model, controller, view design structure. This project also taught me a lot about GitHub and how to use git commits to store
-                    backups of your work. I plan on updating this application and add a more colorful user interface. I also plan on adding the ability for users to change their profile picture from the
-                    default hiking person.</p>
+                  <p class="card-text"> After completing The Fence Project, the project has helped and continues to help keep the property secure for the pets of the house to roam the backyard. Users have reported that the local website is fast and easy to understand.
+                    Users have also noted that the implementation of the quick-read led lights on the server makes it easy to quickly let the dog out in a pinch. Overall the success of the product has resulted in less instances of dogs lost roaming the neighborhood.  
+                  </p>
                 </div>
               </div>
               <div class="col-lg-6 col-ms-12">
-                <img src="Pictures\project-trail pics\project-trail-preview.png" class="card-img-top" alt="Smart Blinds Component pic">
+                <img src="Pictures\Project-Fence pics\Fence Overview.jpg" class="card-img-top" alt="Smart Blinds Component pic">
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Future Development -->
+        <div class="col-lg-12 col-ms-12">
+          <div class="card" style=""id = "Future">
+            <div class="row">
+              <div class="col-lg-12 col-ms-12">
+                <h1 class="card-title">Future Development</h1>
+                <div class="card-body">
+                  <p class="card-text"> In the future, I plan to further develop this product by adding new features and technologies. First I plan to change how client battery charging is performed. Currently, with the power-saving measures taken both physically and through
+                     software the unit lasts for 7 days before needing a battery exchange. The goal for this product is to not need to change out the depleted batties for new ones. Currently, the recharging method that is used is a solar panel. The problem with this panel is
+                      that it does not receive adequate sunlight in the location it is installed. I plan to either relocate the solar panel to a better location or change the charging method to another technology power generator. Secondly, I am currently developing a physical
+                       and software system that allows Fence clients to report their battery status. This status will be a good indicator for the user to know what status the client system is in and whether or not the information the server has is reliable or not.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
 
       </div>
     </div>

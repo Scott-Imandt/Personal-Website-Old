@@ -1,6 +1,7 @@
 body {
   background-color: #eeeeee;
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -9,6 +10,10 @@ h1 {
 }
 
 h2 {
+  color: #00adb5;
+}
+
+.title-h2{
   color: #eeeeee;
 }
 
@@ -41,7 +46,7 @@ h2 {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
-  color:#eeeeee63;
+  color:#00adb5;
 }
 
 #title {
