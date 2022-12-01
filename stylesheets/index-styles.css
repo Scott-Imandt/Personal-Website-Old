@@ -1,6 +1,7 @@
 body {
   background-color: #eeeeee;
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -9,33 +10,52 @@ h1 {
 }
 
 h2 {
+  color: #00adb5;
+}
+
+.title-h2{
   color: #eeeeee;
 }
 
 /* Title Section editors */
 .navbar{
   color: #eeeeee;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 15px;
-
 }
 
 .navbar-brand{
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .navbar-dark .navbar-brand {
-    color: #00adb5;
+  color: #00adb5;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #00f2ff;
+}
+
+.nav-link{
+  padding: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:#eeeeeeee;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#00adb5;
 }
 
 #title {
-  background-color: #393e46;
+  background-color: #393e46; 
   font-family: 'Lobster','Merriweather Sans', sans-serif;
 }
 
 .title-h1 {
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 5.5rem;
   text-align: center;
 }
@@ -43,7 +63,7 @@ h2 {
 .title-h2 {
   font-size: 2.75rem;
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 20%;
 }
 
 .container-fluid {
@@ -68,11 +88,11 @@ text-align: center;
 .btn{
   display: block;
   margin: 10px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50)
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.50)
 }
 
 .btn:hover{
- box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 0px 8px 1px #00f2ff, 0 6px 20px 0 rgba(0,0,0,0.90);
 }
 
 /* about section editors */
@@ -84,6 +104,10 @@ text-align: center;
   border-width: thick;
   padding: 10px;
   margin: 20px;
+}
+
+.card.clickable:hover{
+  box-shadow: 0 0px 8px 1px #00adb5, 0 6px 20px 0 rgba(0, 0, 0, 0.90);
 }
 
 .card-title{
