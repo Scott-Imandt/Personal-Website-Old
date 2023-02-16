@@ -146,10 +146,11 @@ margin-right: auto;
   text-align: center;
 }
 
-#ResumeButton{
+.HeaderButton{
   color: #00adb5;
   font-size: 3.5rem;
   font-family: 'Kalam','Merriweather Sans', sans-serif; 
+  margin-bottom: 0;
 }
 
 .card-body-Text-align{
